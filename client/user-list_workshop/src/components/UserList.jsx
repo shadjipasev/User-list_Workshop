@@ -1,5 +1,5 @@
-import UserListTable from "../UserListTable";
 import ListHeader from "./ListHeader";
+import UserListTable from "./UserListTable";
 
 const UserList = () => {
   return (

@@ -1,6 +1,16 @@
 import UserRow from "./UserRow";
+import * as userService from "../services/userAPI";
+import { useEffect, useState } from "react";
 
 const UserListTable = () => {
+  const [users, setUsers] = useState([]);
+
+  console.log(users);
+
+  useEffect(() => {
+    userService.getAll().then((result) => setUsers(result));
+  }, []);
+
   return (
     <table className="table">
       <thead>
@@ -100,7 +110,17 @@ const UserListTable = () => {
         </tr>
       </thead>
       <tbody>
-        <UserRow />
+        {users.map((user) => (
+          <UserRow
+            key={user._id}
+            createdAt={user.createdAt}
+            email={user.email}
+            firstName={user.firstName}
+            lastName={user.lastName}
+            phoneNumber={user.phoneNumber}
+            imageUrl={user.imageUrl}
+          />
+        ))}
       </tbody>
     </table>
   );

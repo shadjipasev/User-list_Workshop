@@ -27,7 +27,7 @@ export default function CreateUserModa() {
           <form>
             <div className="form-row">
               <div className="form-group">
-                <label for="firstName">First name</label>
+                <label htmlFor="firstName">First name</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-user"></i>
@@ -36,7 +36,7 @@ export default function CreateUserModa() {
                 </div>
               </div>
               <div className="form-group">
-                <label for="lastName">Last name</label>
+                <label htmlFor="lastName">Last name</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-user"></i>
@@ -48,7 +48,7 @@ export default function CreateUserModa() {
 
             <div className="form-row">
               <div className="form-group">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-envelope"></i>
@@ -57,7 +57,7 @@ export default function CreateUserModa() {
                 </div>
               </div>
               <div className="form-group">
-                <label for="phoneNumber">Phone number</label>
+                <label htmlFor="phoneNumber">Phone number</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-phone"></i>
@@ -68,7 +68,7 @@ export default function CreateUserModa() {
             </div>
 
             <div className="form-group long-line">
-              <label for="imageUrl">Image Url</label>
+              <label htmlFor="imageUrl">Image Url</label>
               <div className="input-wrapper">
                 <span>
                   <i className="fa-solid fa-image"></i>
@@ -79,7 +79,7 @@ export default function CreateUserModa() {
 
             <div className="form-row">
               <div className="form-group">
-                <label for="country">Country</label>
+                <label htmlFor="country">Country</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-map"></i>
@@ -88,7 +88,7 @@ export default function CreateUserModa() {
                 </div>
               </div>
               <div className="form-group">
-                <label for="city">City</label>
+                <label htmlFor="city">City</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-city"></i>
@@ -100,7 +100,7 @@ export default function CreateUserModa() {
 
             <div className="form-row">
               <div className="form-group">
-                <label for="street">Street</label>
+                <label htmlFor="street">Street</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-map"></i>
@@ -109,7 +109,7 @@ export default function CreateUserModa() {
                 </div>
               </div>
               <div className="form-group">
-                <label for="streetNumber">Street number</label>
+                <label htmlFor="streetNumber">Street number</label>
                 <div className="input-wrapper">
                   <span>
                     <i className="fa-solid fa-house-chimney"></i>

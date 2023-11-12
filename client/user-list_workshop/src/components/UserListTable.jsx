@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 const UserListTable = () => {
   const [users, setUsers] = useState([]);
 
-  console.log(users);
-
   useEffect(() => {
     userService.getAll().then((result) => setUsers(result));
   }, []);

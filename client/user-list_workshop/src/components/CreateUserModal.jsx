@@ -1,7 +1,7 @@
-export default function CreateUserModa() {
+export default function CreateUserModa({ closeModal }) {
   return (
     <div className="overlay">
-      <div className="backdrop"></div>
+      <div className="backdrop" onClick={closeModal}></div>
       <div className="modal">
         <div className="user-container">
           <header className="headers">
@@ -16,6 +16,7 @@ export default function CreateUserModa() {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
+                onClick={closeModal}
               >
                 <path
                   fill="currentColor"
@@ -122,7 +123,12 @@ export default function CreateUserModa() {
               <button id="action-save" className="btn" type="submit">
                 Save
               </button>
-              <button id="action-cancel" className="btn" type="button">
+              <button
+                id="action-cancel"
+                className="btn"
+                type="button"
+                onClick={closeModal}
+              >
                 Cancel
               </button>
             </div>

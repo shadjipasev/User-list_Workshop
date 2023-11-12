@@ -10,13 +10,17 @@ const UserList = () => {
     setShowCreate(true);
   };
 
+  const closeModalHandler = () => {
+    setShowCreate(false);
+  };
+
   return (
     <main className="main">
       <section className="card users-container">
         <ListHeader />
 
         <div className="table-wrapper">
-          {showCreate && <CreateUserModa />}
+          {showCreate && <CreateUserModa closeModal={closeModalHandler} />}
           <UserListTable />
         </div>
         <button className="btn-add btn" onClick={showModalHandler}>

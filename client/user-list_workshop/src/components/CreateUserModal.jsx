@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 export default function CreateUserModa({ closeModal }) {
+
+    const[firstName, setFirstName] = useState('');
+    const[email, setEmail] = useState('');
+
+
+
   return (
     <div className="overlay">
       <div className="backdrop" onClick={closeModal}></div>
@@ -33,7 +41,12 @@ export default function CreateUserModa({ closeModal }) {
                   <span>
                     <i className="fa-solid fa-user"></i>
                   </span>
-                  <input id="firstName" name="firstName" type="text" />
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    value={}
+                  />
                 </div>
               </div>
               <div className="form-group">
